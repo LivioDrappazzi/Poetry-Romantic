@@ -1,0 +1,1348 @@
+/* CSS-reset от Эрика Мейера */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+
+font-family: 'Montserrat';
+/*УКАЗАТЬ ПУТЬ ДО ШРИФТА Montserrat-Regular.ttf */
+src: url('../fonts/Montserrat-Regular.ttf');
+
+
+font-weight: normal;
+font-style: normal;
+
+}
+
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500i&amp;subset=cyrillic');
+@import url(http://fonts.googleapis.com/css?family=Philosopher&subset=cyrillic);
+
+ .body {
+ 	display: flex;
+ 	font-family: Montserrat, sans-serif;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+ }
+
+ *, *:after, *:before {
+   transition: .5s ease-in-out;
+   /* добавим плавность переходов для всех элементов страницы*/
+}
+
+.hidden{
+opacity:0;
+}
+.visible{
+opacity:1;
+}
+
+ .header {
+	
+	position: absolute;
+	height: 10vh;
+	width: 100%;
+	line-height: 1;
+	background-color: #ffffff;
+	text-decoration: none;
+	z-index: 9999;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	z-index: 9999;
+}
+
+.logo {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.logo__link {
+	z-index: 9999;
+}
+
+.logo__img {
+	height: 10vh;
+	width: 10vh;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+	z-index: 9999;
+}
+
+.link__2, .link__3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.link__2 {
+	width: 33%;
+}
+
+.link__2 a {
+	font-family: Montserrat, sans-serif;
+	font-size: 4vh;
+	white-space: nowrap;
+	color: #000000;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.link__3 {
+	width: 33%;
+}
+
+.link__3 a {
+	font-family: Montserrat, sans-serif;
+	font-size: 4vh;
+	white-space: nowrap;
+	color: #000000;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.link__2 a:hover {
+	text-decoration: underline; 
+}
+
+.link__3 a:hover {
+	text-decoration: underline; 
+}
+
+.img {
+	width: 3vh;
+	height: 3vh;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.asas {
+	display: none;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 3vh;
+}
+
+.container__1 {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rectangle {
+	position: absolute;
+	width: 10%;
+	height: 40vh;
+	background: #D1BCAA;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	z-index: 8999;
+	animation-duration: 3s;
+	margin-left: 35%;
+}
+
+.image__1 {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.Ph1 {
+	width: 30%;
+	height: 40vh;
+	margin-left: 20%;
+	margin-bottom: 40vh;
+	z-index: 8000;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	animation-duration: 1s;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.image__2 {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.Ph2 {
+	width: 35%;
+	height: 60vh;
+	margin-left: 35%;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	animation-duration: 1s;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+	z-index: 9000;
+}
+
+.image__3 {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end; 
+}
+
+.Ph3 {
+	width: 20%;
+	height: 50vh;
+	margin-right: 15%;
+	margin-bottom: 15%;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	animation-duration: 1s;
+	z-index: 8000;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.left__txt {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.left__txt h1 {
+   margin-left: 3%;
+  	font-family: Montserrat Alternates;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9vh;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+	color: #000000;
+	text-shadow: 0 -1px rgba(0,0,0,.1);
+	-webkit-animation: pulsate 2s linear infinite;
+	animation: pulsate 2s linear infinite;
+	-webkit-animation: pulse 5s linear infinite;
+	animation: pulse 5s linear infinite;
+
+}
+
+@-webkit-keyframes pulsate {
+ 50% { color: #2E2C2C; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+@keyframes pulsate {
+ 50% { color: #2E2C2C; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+
+.section__2 {
+	display: flex;
+	justify-content: center;
+}
+.container__2 {
+	width: 90%;
+	height: 120vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container__3 {
+	width: 90%;
+	height: 90vh;
+}
+
+.container__5 {
+	width: 90%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.poetry__1 {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.line__1 {
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.line__1__alt {
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;	
+}
+
+.p3 {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.p23 {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.ykasatel {
+	width: 10vh;
+	height: 10vh;
+}
+
+.line__2 {
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.poetry__1__txt h1 {
+	width: 100%;
+	font-family: Montserrat Alternates; 
+	font-style: normal;
+	font-weight: normal;
+   font-size: 3vh;
+}
+
+.poetry__1__txt {
+	width: 50%;
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.poetry__1__block__foto {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.poetry__1__foto {
+	width: 60vh;
+	height: 60vh;
+	filter: drop-shadow(20px -20px 0px #494646);
+   vertical-align: middle;
+}
+
+.poetry__1__foto img {
+	width: 60vh;
+	height: 60vh;
+	z-index: 9000;
+}
+
+.p1 {
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.poetry__1__foto:before { 
+	content: 'Пушкин Александр Сергеевич'; 
+	position: absolute; 
+	font-family: Montserrat Alternates; 
+	font-style: normal;
+	font-weight: normal;
+   font-size: 4vh;
+   text-align: center;
+  	color: white;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: rgba(209, 188, 170, 0.5);
+	opacity: 0; 
+	display:flex; 
+	align-items: center;
+}
+
+.poetry__1__foto:after { 
+	content: ''; 
+	position: absolute; 
+	margin: auto;
+	background: none;
+	text-decoration: none;
+	opacity: 0; 
+	z-index: 9900;
+	display:flex; 
+	align-items: center;
+}
+
+.poetry__1__foto:hover:before,
+.poetry__1__foto:hover:after { opacity: 1; }
+
+.poetry__2__foto {
+	width: 60vh;
+	height: 60vh;
+	filter: drop-shadow(20px -20px 0px #494646);
+   vertical-align: middle;
+}
+
+.poetry__2__foto img {
+	width: 60vh;
+	height: 60vh;
+	z-index: 9000;
+}
+
+.poetry__2__foto:after { 
+	content: ''; 
+	position: absolute; 
+	margin: auto;
+	background: none;
+	text-decoration: none;
+	opacity: 0; 
+	z-index: 9900;
+	display:flex; 
+	align-items: center;
+}
+
+.poetry__2__foto:before { 
+	content: 'Ахматова Анна Андреевна'; 
+	position: absolute; 
+	font-family: Montserrat Alternates; 
+	font-style: normal;
+	font-weight: normal;
+   font-size: 4vh;
+   text-align: center;
+  	color: white;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: rgba(209, 188, 170, 0.5);
+	opacity: 0; 
+	display:flex; 
+	align-items: center;
+}
+
+.poetry__2__foto:hover:before,
+.poetry__2__foto:hover:after { opacity: 1; }
+
+.poetry__3__foto {
+	width: 60vh;
+	height: 60vh;
+	filter: drop-shadow(20px -20px 0px #494646);
+   vertical-align: middle;
+}
+
+.poetry__3__foto img {
+	width: 60vh;
+	height: 60vh;
+	z-index: 9000;
+}
+
+.poetry__3__foto:after { 
+	content: ''; 
+	position: absolute; 
+	margin: auto;
+	background: none;
+	text-decoration: none;
+	opacity: 0; 
+	z-index: 9900;
+	display:flex; 
+	align-items: center;
+}
+
+.poetry__3__foto:before { 
+	content: 'Цветаева Марина Ивановна'; 
+	position: absolute; 
+	font-family: Montserrat Alternates; 
+	font-style: normal;
+	font-weight: normal;
+   font-size: 4vh;
+   text-align: center;
+  	color: white;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: rgba(209, 188, 170, 0.5);
+	opacity: 0; 
+	display:flex; 
+	align-items: center;
+}
+
+.poetry__3__foto:hover:before,
+.poetry__3__foto:hover:after { opacity: 1; }
+
+.poetry__4__foto {
+	width: 60vh;
+	height: 60vh;
+	filter: drop-shadow(20px -20px 0px #494646);
+   vertical-align: middle;
+}
+
+.poetry__4__foto img {
+	width: 60vh;
+	height: 60vh;
+	z-index: 9000;
+}
+
+.poetry__4__foto:after { 
+	content: ''; 
+	position: absolute; 
+	margin: auto;
+	background: none;
+	text-decoration: none;
+	opacity: 0; 
+	z-index: 9900;
+	display:flex; 
+	align-items: center;
+}
+
+.poetry__4__foto:before { 
+	content: 'Евтушенко Евгений Александрович'; 
+	position: absolute; 
+	font-family: Montserrat Alternates; 
+	font-style: normal;
+	font-weight: normal;
+   font-size: 4vh;
+   text-align: center;
+  	color: white;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: rgba(209, 188, 170, 0.5);
+	opacity: 0; 
+	display:flex; 
+	align-items: center;
+}
+
+.poetry__4__foto:hover:before,
+.poetry__4__foto:hover:after { opacity: 1; }
+
+.rectangle__2 {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background: #D1BCAA;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);	
+	z-index: 800;
+	align-self: flex-end;
+	bottom: 6vh;
+	right: 4vh;
+}
+
+.container__4 {
+	height: 30vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.container__7 {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.block__1, .block__2 {
+	width: 80vh;
+	height: 80vh;
+}
+
+.block__1 {
+	background-color: #494646;	
+	box-shadow: -40px -40px 0px #615E5E;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Montserrat Alternates;
+	color: white;
+	font-size: 5vh;
+}
+
+.block__2 {
+	background-color: #BEBEBE;
+	box-shadow: 40px 40px 0px #A7A7A7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Montserrat Alternates;
+	color: black;
+	text-align: center;
+	font-size: 3vh;
+}
+
+.f__block__1, .f__block__2 {
+	height: 15vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.f__block__1__1, .f__block__1__2, .f__block__1__3 {
+	width: 33%;
+	display: flex;
+}
+
+.f__block__1__1, .f__block__1__2, .f__block__1__3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #000000;
+}
+
+.f__block__1__1 img {
+	width: 10vh;
+	height: 10vh;
+}
+
+.f__block__1__2 img {
+	width: 10vh;
+	height: 10vh;
+}
+
+.f__block__1__3 img {
+	width: 10vh;
+	height: 10vh;
+}
+
+.f__block__1__3__h1 {
+	font-family: Montserrat Alternates; 
+	font-style: normal;
+	font-weight: normal;
+   font-size: 3.5vh;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.f__block__1__3__h1:hover {
+	text-decoration: underline;
+}
+
+.f__block__2 {
+	font-family: Montserrat; 
+	font-style: normal;
+	font-weight: normal;
+   font-size: 4vh;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.menu-btn{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 1vh;
+  width: 5vh;
+  height: 5vh;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 20px;
+  bottom: 2vh;
+}
+ 
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu-btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu-btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menubox{
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+}
+
+.menu-item {
+  display: block;
+  padding: 12px 24px;
+	font-family: Montserrat, sans-serif;
+	font-size: 3.5vh;
+	white-space: nowrap;
+	color: #000000;
+	font-style: normal;
+	text-decoration: none;
+  	transition-duration: .25s;
+  	display: flex;
+  	align-items: center;
+  	width: 100%;
+}
+.menu-item:hover {
+  background-color: #ECEFF1;
+}
+
+#menu-toggle{
+  opacity: 0;
+}
+
+#menu-toggle:checked ~ .menu-btn > span{
+  transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-btn > span::before{
+  top: 0;
+  transform: rotate(0);
+}
+#menu-toggle:checked ~ .menu-btn > span::after{
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menubox{
+  visibility: visible;
+  right: 0;
+}
+
+.burger-menu {
+	display: none;
+}
+
+.menu-item.category {
+	font-weight: bold;
+	font-style: italic;	
+}
+
+.menu-item.email img {
+	height: 5vh;
+}
+
+.menu-item.instagr img {
+	height: 5vh;
+}
+
+.menu-item.vkont img {
+	height: 5vh;
+}
+
+.menu-item__h1 {
+	font-size: 2vh;
+	margin-left: 5%;
+}
+
+.menubox li {
+	flex-direction: row;
+	width: 100%;
+}
+
+.mainmenubtn {
+   color: black;
+   border: none;
+   cursor: pointer;
+  	display: block;
+	font-family: Montserrat Alternates, sans-serif;
+	font-size: 3.5vh;
+	white-space: nowrap;
+	font-style: normal;
+	text-decoration: none;
+  	transition: 3s;
+  	display: flex;
+  	align-items: center;
+  	width: 100%;
+	padding: 0;
+	margin: 0;
+	padding: 12px 24px;
+	margin-top: 1vh;
+	background-color: transparent;
+	  transition-duration: .25s;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+      transition-duration: .25s;
+}
+.dropdown-child {
+    display: none;
+    background-color: #ECEFF1;
+    min-width: 200px;
+      transition-duration: .25s;
+}
+.dropdown-child__a {
+	color: black;
+	padding: 15px;
+	padding-left: 10%;
+	text-decoration: none;
+	display: block;
+	font-family: Montserrat Alternates, sans-serif;
+	font-size: 3.5vh;
+	font-style: italic;
+	 display: flex;
+    align-items: center;
+    justify-content: flex-start;
+      transition-duration: .25s;
+}
+
+.dropdown-child__a:hover {
+    font-size: 4vh;
+      transition-duration: .25s;
+}
+
+.dropdown:hover .dropdown-child {
+	display: block;
+	transition: 3s;
+	  transition-duration: .25s;
+}
+
+.ul__main {
+ list-style: none; /*убираем маркеры списка*/
+ margin: 0; /*убираем отступы*/
+ padding-left: 0; /*убираем отступы*/
+ background:#fff; /*добавляем фон всему меню*/
+ height: 10vh; /*задаем высоту*/
+ font-family: Montserrat Alternates, sans-serif;
+ font-size: 3.5vh;
+ padding: auto;
+ margin: auto;
+} 
+.maina {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#fff; /*добавляем фон к пункту меню*/
+  color:#000; /*меняем цвет ссылок*/
+  font-family: Montserrat Alternates, sans-serif; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+ border: none; /*добавляем бордюр справа*/
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+  	  padding:0px 15px; /*добавляем отступ*/
+  	  padding-top: 2vh;
+  	  display: flex;
+  	  flex-direction: row;
+}
+.maina:hover {
+  background:#ECEFF1;/*добавляем эффект при наведении*/
+}
+
+.main__li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  position:relative; /*задаем позицию для позиционирования*/
+   font-size: 3.5vh;
+   z-index: 9999;
+}
+     
+    /*Стили для скрытого выпадающего меню*/
+    .main__li > .ul__main {
+        position:relative;
+        display:none;   
+    }
+     
+    /*Делаем скрытую часть видимой*/
+    .main__li:hover > .ul__main {
+        display:block; 
+        width:100%;  /*Задаем ширину выпадающего меню*/      
+    }
+   .main__li:hover > .ul__main > .main__li {
+        float:none; /*Убираем горизонтальное позиционирование*/
+    }
+
+.img__cat {
+	height: 4vh;
+	padding-left: 0;
+}
+
+.butt {
+	border: none;
+	padding-left: 10px;
+	background-color: transparent;
+
+}
+
+.butt:hover {
+	height: .2vh;
+}
+.scrollup{
+	width:40px;
+	height:40px;
+	opacity:0.2;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	display:none;
+	text-indent:-9999px;
+	background: url('icon_top.png') no-repeat;
+}
+
+.container__8 {
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.c8__a1, .c8__a2 {
+	height: 5vh;
+	background: none;
+	width: 20%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.c8__a3 {
+	height: 5vh;
+	background: none;
+	width: 20%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.c8__a1:hover {
+	text-decoration: underline;
+   transition: .2s ease-in-out;
+}
+
+.c8__a1 a:hover {
+  	background:rgba(209, 188, 170, 0.5);
+  	font-weight: 600;
+}
+
+.c8__a2:hover {
+	text-decoration: underline;
+   transition: .2s ease-in-out;
+}
+
+.c8__a2 a:hover {
+  	background:rgba(209, 188, 170, 0.5);
+  	font-weight: 600;
+}
+
+.c8__a2 {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.c8__a1 a {
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 5vh;
+	font-family: Montserrat Alternates;
+	font-size: 3vh;
+	text-decoration: none;
+	color: black;
+	width: 100%;
+	text-align: center;
+}
+
+.c8__a2 a {
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 5vh;
+	font-family: Montserrat Alternates;
+	font-size: 3vh;
+	text-decoration: none;
+	color: black;
+	width: 100%;
+}
+
+
+/* АДАПТИВ */
+
+/* 1920 на 1080 */
+/* 1600 на 900 */
+/* 1536 на 864 */
+/* 1440 на 900 */
+
+@media screen and (max-width: 1235px) {
+	.block__1, .block__2 {
+		width: 70vh;
+		height: 70vh;
+	}
+	.block__1 {
+		font-size: 4vh;
+	}
+	.block__2 {
+		font-size: 3vh;
+	}
+	.Ph1 {
+		height: 39vh;
+		width: 35%;
+	}
+	.Ph3 {
+		width: 23%;
+	}
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 601px) {
+	.container__2, .container__3, .container__5 {
+		width: 100%;
+	}
+	.rectangle__3 {
+		width: 90%;
+	}
+	.main__li {
+		font-size: 2.8vh;
+	}
+	.container {
+		width: auto;
+	}
+	.ul__main {
+		display: none;
+	}
+	.link__2, .link__3 {
+		display: none;
+	}
+	.search {
+		display: none;
+	}
+	.logo {
+		justify-content: flex-start;
+	}
+	.burger-menu {
+		display: flex;
+	}
+	.menu-btn {
+		display: flex;
+		align-items: center;
+	}
+	.footer {
+		display: none;
+	}	
+	.container {
+		justify-content: flex-start;
+	}
+	.rectangle, .rectangle__2 {
+		display: none;
+	}
+	.Ph1 {
+		width: 30%;
+		height: 30vh;
+	}
+	.Ph2 {
+		width: 30%;
+		height: 30vh;
+	}
+	.Ph3 {
+		width: 30%;
+		height: 30vh;
+	}
+	.image__3 {
+		align-items: flex-end;
+	}
+	.line__1__alt {
+		display: none;
+	}
+	.line__2 {
+		flex-direction: column;
+	}
+	.container__2 {
+		height: 110vh;
+		align-items: flex-start;
+	}
+	.poetry__1__txt {
+		order: 2;
+		align-items: flex-start;
+		text-align: center;
+		width: 100%;
+	}
+	.poetry__1__txt h1 {
+		font-size: 2vh;	
+		margin-top: 3vh;	
+	}
+	.poetry__1__block__foto {
+		order: 1;
+		width: 50vh;
+		height: 50vh;
+	}
+	.container__3 {
+		height: 110vh;
+		align-items: flex-start;
+	}
+	.container__5 {
+		height: 110vh;
+		align-items: flex-start;
+	}
+	.poetry__4__foto, .poetry__3__foto, .poetry__2__foto, .poetry__1__foto {
+		width: 30vh;
+		height: 30vh;
+	}
+	.poetry__4__foto img {
+		width: 30vh;
+		height: 30vh;
+	}
+	.poetry__3__foto img {
+		width: 30vh;
+		height: 30vh;
+	}
+	.poetry__2__foto img {
+		width: 30vh;
+		height: 30vh;
+	}
+	.poetry__1__foto img {
+		width: 30vh;
+		height: 30vh;
+	}
+	.container__7 {
+		flex-direction: column;
+		margin-top: 10vh;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.block__1 {
+		height: 10vh;
+	}
+	.c8__a3 {
+		display: none;
+	}
+	.container__8 {
+		width: 100%;
+		height: 20vh;
+	}
+	.c8__a1, .c8__a2 {
+		width: auto;
+	}
+	.scrollup{
+
+	}
+
+}
+@media screen and (max-width: 551px) {
+	.block__1 {
+		width: 60vh;
+		height: 10vh;
+	}
+	.block__2 {
+		width: 60vh;
+		height: 60vh;
+	}
+	.block__1 {
+		font-size: 3vh;
+	}
+	.block__2 {
+		font-size: 2vh;
+	}
+	.container__7 {
+		height: 80vh;
+		margin-top: 20vh;
+	}
+	.container__8 {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 511px) {
+	.asas {
+		display: block;
+		font-style: italic;
+		margin-left: 17%;
+		z-index: 9999;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.block__1 {
+		width: 50vh;
+		height: 10vh;
+	}
+	.block__2 {
+		width: 50vh;
+		height: 50vh;
+	}
+	.block__1 {
+		font-size: 2.5vh;
+		font-weight: bold;
+	}
+	.block__2 {
+		font-size: 2vh;
+	}
+	.Ph1 {
+		width: 55%;
+		height: 30vh;
+	}
+	.Ph2 {
+		width: 54%;
+		height: 30vh;
+	}
+	.Ph3 {
+		width: 40%;
+		height: 30vh;
+	}
+	.left__txt h1 {
+		font-size: 6vh;
+	}
+	.container__2, .container__3, .container__5 {
+		height: 105vh;
+	}
+	.container__5 {
+		height: 105vh;
+		align-items: flex-start;
+	}	
+}
+
+@media screen and (max-width: 460px) {
+		.asas {
+		margin-left: 14%;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.container__7 {
+		height: 70vh;
+	}
+	.asas {
+		margin-left: 12%;
+	}	
+}
+
+@media screen and (max-width: 410px) {
+	.Ph1 {
+		width: 60%;
+		height: 30vh;
+	}
+	.block__1 {
+		width: 40vh;
+		height: 10vh;
+	}
+	.block__2 {
+		width: 40vh;
+		height: 40vh;
+	}
+	.block__1 h1 {
+		font-size: 2.3vh;
+	}	
+	.block__2 h1 {
+		font-size: 1.8vh;
+	}	
+	.container__7 {
+		margin-top: 10vh;
+		height: 60vh;
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.poetry__1__txt h1 {
+		font-size: 1.8vh;
+	}
+	.block__2 {
+	box-shadow: 20px 20px 0px #A7A7A7;
+	}
+	.container__7 {
+		height: 60vh;
+	}
+	.asas {
+		margin-left: 8%;
+	}
+}
